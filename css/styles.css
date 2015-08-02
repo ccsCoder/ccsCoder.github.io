@@ -1,0 +1,109 @@
+/* 
+    Document   : styles
+    Created on : Aug 16, 2013, 2:00:58 PM
+    Author     : NISHANTG
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    background-image: url('../images/bg.png');
+    background-repeat: repeat-x,repeat-y;
+    font-size: 100%;
+    font-family: Georgia;
+}
+
+.companyHeader {
+    font-size: 32px;
+    font-style: italic;
+    color:crimson;
+    /*background-image: url('../images/city_strip.png');*/
+    /*background-repeat: repeat-x,repeat-y;*/
+    /*padding-top: 15px;*/
+}
+.featurette-image {
+    max-width: 200px;
+    max-height: 200px;
+}
+.marketingImages {
+    max-width: 140px;
+    max-height: 140px;
+}
+.navbar {
+    margin-top: 10px;
+}
+.shadowedContainer,.navbar {
+    box-shadow: 0px 2px 5px 2px gray;
+    border-radius: 5px;
+    /*background-image: url('../images/city.png')*/
+    margin-bottom: 20px;
+    
+}
+
+.navbar-inner,.brand {
+    min-height: 30px;
+    padding-top:10px;
+}
+
+.carousel .item {
+    height: 400px;
+}
+.carousel img {
+    width: 100%;
+    height: 400px;
+}
+.carousel-caption {
+    color:black;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 400px) {
+    .responsiveFont {
+        opacity:1;
+        color:white;
+        font-size: 9px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+  .responsiveFont {
+        opacity:1;
+        color:white;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+ .responsiveFont {
+        opacity:1;
+        color:white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .responsiveFont {
+        opacity:1;
+        color:white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+} 
+
+.carousel .lead {
+    font-style: italic;
+}
+
+.featurette .lead {
+    font-size: 17px;
+}
+
+.footerText {
+    min-height: 100px;
+    /*background-color: darkgray;*/
+    text-align: center;
+    /*color:white;*/
+}

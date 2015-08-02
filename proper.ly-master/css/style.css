@@ -1,0 +1,103 @@
+body {
+    background:url('../img/city_blurred_4.png');background-attachment: fixed;
+}
+
+#article_blowup {
+    display:none;
+    background-color:whitesmoke;
+    /* padding: 5px; */
+/*    max-height: 50%;
+    overflow-y: auto;
+    overflow-style: scrollbar;*/
+    
+   
+}
+
+.article_blowup_heading {
+    background-color: gainsboro;
+    
+}
+
+
+.article_detail_content {
+    
+    
+    /* background-color: whitesmoke; */
+    
+    padding: 25px;
+}
+
+.navigation {
+    margin-top: 10px;
+    border-radius:5px;
+    box-shadow: 5px 5px 10px darkgray;
+    -webkit-box-shadow: 5px 5px 10px darkgray;
+    -moz-box-shadow: 5px 5px 10px darkgray;
+}
+
+.article_summary_heading {
+    background-color: gainsboro;
+    font-size:larger;
+}
+
+
+.article_summary {
+    border: 1px solid gainsboro;
+    background-color: whitesmoke;
+    border-top: none;
+    cursor: pointer;
+    transition: all 0.50s ease-in-out;
+    -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    box-shadow: 5px -5px 10px darkgray;
+    -webkit-box-shadow: 5px -5px 10px darkgray;
+    -moz-box-shadow: 5px -5px 10px darkgray;
+
+}
+
+.article_summary:hover {
+    box-shadow: 10px -10px 10px darkgray;
+    -webkit-box-shadow: 10px -10px 10px darkgray;
+    -moz-box-shadow: 10px -10px 10px darkgray;
+}
+
+
+/*.article_summary p {
+    font-style: italic;
+    padding:10px
+}*/
+
+.footer {
+    /*opacity:0.5;*/
+    /*background-color:black;*/
+    border-radius:5px;
+    background-color: gainsboro;
+    margin-bottom: 10px;    
+    min-height: 50px;
+}
+
+.dash_item {
+    cursor: pointer;
+    transition: all 0.50s ease-in-out;
+    -webkit-transition: all 0.50s ease-in-out;
+    -moz-transition: all 0.50s ease-in-out;
+    box-shadow: 5px 5px 10px darkgray;
+    -webkit-box-shadow: 5px 5px 10px darkgray;
+    -moz-box-shadow: 5px 5px 10px darkgray;
+}
+
+.dash_item:hover {
+    box-shadow: 10px 10px 15px darkgray;
+    -webkit-box-shadow: 10px 10px 15px darkgray; 
+    -moz-box-shadow: 10px 10px 15px darkgray;
+}
+
+.carouse_shadow {
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    box-shadow: 5px 10px 15px rgb(85, 81, 81);
+    -webkit-box-shadow: 5px 10px 15px rgb(85, 81, 81);
+    -moz-box-shadow: 5px 10px 15px rgb(85, 81, 81);
+}
+

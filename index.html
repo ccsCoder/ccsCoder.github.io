@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nishant's Awesome Website</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nishant's Homepage">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript,Responsive, Nishant, Nishant's Homepage, jQuery, jQuery Demo
+              Neo's Homepage, Neo's Website, ccsCoder, ccsCoder Website, ccsCoder Homepage, bootstrap demo, twitter bootstrap demo, 
+              full screen slideshow, dynamic background website">
+        <meta name="author" content="Nishant Gupta">
+        <link rel="stylesheet" href="css/jquery.vegas.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/myStyles.css"/>
+        <link rel="stylesheet" href="css/jquery.share.css"/>
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.vegas.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fittext.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
+        <script type="text/javascript" src="js/jquery.share.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+               $.vegas('slideshow', {
+                    delay:7000,
+                    preload:true,
+                    loading:true,
+                    backgrounds:[
+                      { src:'images/image_png_10_dark.png', fade:2000 },
+                      { src:'images/image_png_11_dark.png', fade:5000 },
+                      { src:'images/image_png_2_dark.png', fade:5000 },
+                      { src:'images/image_png_3_dark.png', fade:5000 },
+                      { src:'images/image_png_5_dark.png', fade:5000 },
+//                      { src:'images/image_png_6.png', fade:5000 },
+                      { src:'images/image_png_7_dark.png', fade:5000 },
+//                      { src:'images/image_png_8.png', fade:5000 },
+                      { src:'images/image_png_9_dark.png', fade:5000 }
+//                      { src:'images/image_png_10.png', fade:5000 },
+//                      { src:'images/image_png_11.png', fade:5000 },
+                      
+                      
+                    ]
+                  })('overlay',{src:'overlays/14.png'}); 
+                
+                //$("#textHeader").fadeIn(2000);
+                $("#textHeader").fitText({maxFontSize:'95px'});
+                $("#navigationBar").hide().delay(2000).slideDown("slow",function(e) {
+                    $("#navigationBar li:first").trigger("click");
+                });
+                
+                addNavbarEvents();
+                $('#socialContent').share({
+                    networks: ['facebook','googleplus',
+                        'twitter','linkedin','tumblr','email','stumbleupon']
+                });
+            });
+            
+            
+        </script>
+        
+    </head>
+    <body>
+        <h1 id="textHeader">ccsCoder</h1>
+        <div class="container-fluid">
+            <div class="row-fluid spacer">
+                
+            </div>
+            <div class="row-fluid">
+                <div class="span2 offset1">
+                    <!-- sidebar -->
+                    <ul class="nav nav-pills nav-stacked navigableText" id="navigationBar">
+                            <li class="resume">  <a href="#">A Web Resume</a>  </li>   
+                            <li class="3d"><a href="#">Three Dimensional ?</a></li>
+                            <li class="tweets"><a href="#">Making JS fetch Tweets</a></li> 
+                            <li class="hire"><a href="#">A Clean Design, you say?</a></li> 
+                            <li class="flair"><a href="#">Responsive Slideshows</a></li> 
+                            
+                    </ul>
+                </div>
+                <div class="span9">
+                    <!--main area-->
+                    <div class="container-fluid">
+                        <div class="row-fluid ">
+                            <div class="span8 offset2 ">
+                                <div class='descriptionContainer resume'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">A Web Resume.</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >So, what do you do if you're a Web Developer ? and you need to showcase your work? </p>
+                                    <p class="descriptionContent text-left" >You create a Web Resume.</p>
+                                    <p class="descriptionContent text-left"> Notice how an Animated Background goes nicely with it. This was created using 
+                                    only CSS2 and plain Old jQuery.</p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info" target="_blank" href="http://ccscoder.netii.net/resume/">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                <div class='descriptionContainer tweets'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">The Tweet Fetcher!</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >What happens when you combine the Power of JS and Twitter? </p>
+                                    <p class="descriptionContent text-left" >You get the Tweet Fetcher App.</p>
+                                    <p class="descriptionContent text-left"> A pure javascript app, wherein you can search Tweets by a particular user. Notice how it 
+                                    cleverly works around the Same Origin Policy.</p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info" target="_blank" href="http://ccscoder.netii.net/twitterapp/">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                <div class='descriptionContainer 3d'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">The Third Dimension!</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >3D TV, 3D Monitors, 3D Printers... Thanks to WebGL, the Web is also 3D !</p>
+                                    <p class="descriptionContent text-left" >Here is a 3D line mesh, Just try moving your mouse around.</p>
+                                    <p class="descriptionContent text-left"> P.S: If you don't see anything, probably you should update your browser.</p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info" target="_blank" href="http://ccscoder.netii.net/3DWeb/">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                <div class='descriptionContainer hire'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">A Job Site.</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >I hate Job Sites. They are so ... Messy. Stuff all around the page!</p>
+                                    <p class="descriptionContent text-left" >So, I created my own version of how it should look.</p>
+                                    <p class="descriptionContent text-left"> Although, it won't get you a Job, it looks pretty. </p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info" target="_blank" href="http://ccscoder.netii.net/HireBetter/">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                <div class='descriptionContainer flair'>
+                                    <!--<p class="descriptionHeader text-center">-->
+                                    <h3 class="text-center descriptionHeader">The &QUOT;IT&QUOT; Touch!</h3>
+                                    <!--</p>-->
+                                    <p></p>
+                                    <p class="descriptionContent text-left" >An IT company needs to showcase its work upfront.</p>
+                                    <p class="descriptionContent text-left" >How about a Slideshow? Better!, How about a Responsive Slideshow ???.</p>
+                                    <p class="descriptionContent text-left"> How about making it shareable across social media?</p>
+                                    <p class="text-right darkerBackground">
+                                        <a class="btn btn-info" target="_blank" href="http://ccscoder.netii.net/technoflair/">Launch Demo&Gt;</a>  
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="span2"></div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="row-fluid spacer">
+                
+             </div>   
+        </div>
+        <div class="text-center">
+            <div id="socialContent"></div>
+            <p><span class="footerText">@2013, Nishant Gupta. All Rights Reserved.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a class="companyName" href="mailto:ccsCoder@gmail.com">ccsCoder@gmail.com</a></span></p>
+        </div>
+        
+    </body>
+    
+</html>

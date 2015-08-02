@@ -1,0 +1,107 @@
+/* 
+    Document   : myStyles
+    Created on : 21-Jul-2013, 12:44:05
+    Author     : CodeBeast
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+.companyName {
+    color:yellowgreen;
+    /*font-size: 48pt;*/
+    font-weight:bold;
+}
+
+.crimsonColor {
+    color:crimson;
+}
+
+h1#textHeader {
+    /*background: rgba(0,0,0,0.2);*/
+    text-align: center;
+    color: darkgray;
+    
+    font: 95px/1 "Times";
+    font-style: italic;
+    display: block;
+    text-shadow:
+        /*white -4px -4px 0;*/
+        /*white -2px 2px 0,*/
+        /*white -3px 3px 0,*/
+        black 2px 2px 0;
+    margin: auto auto 5%;
+    /*display:none;*/
+    
+}
+
+h1#textHeader:hover {
+   cursor: pointer;
+   text-shadow: black 2px 2px 0;
+   color:red;
+}
+
+.spacer {  margin-top: 6%; }
+
+.footerText {
+    color: black;
+    /*color: #0088cc;*/
+    font-size:smaller;
+    margin-top: 20px;
+    /*background-color: black;*/
+    /*opacity: 0.;*/
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    
+}
+
+.companyName {
+    font-variant: small-caps;
+    /*font-size: larger;*/
+    color: yellowgreen;
+    font-style: italic;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+/*.navigableText {
+    font-size: 24pt; 
+}*/
+
+.navigableText li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.descriptionHeader {
+    color: #0088cc;
+    /*background-color: #cccccc;*/
+/*    background-color: #0088cc;
+    opacity:0.7;
+    border-radius: 10px 10px 10px 10px;*/
+    
+}
+
+.darkerBackground {
+/*    background-color: #0088cc;
+    background-color: #cccccc;
+    opacity:0.7;
+    border-radius: 10px 10px 10px 10px;*/
+}
+.descriptionContent {
+    color: black;
+    font-size: larger;
+    padding-left: 5px;
+    
+    
+}
+
+.descriptionContainer {
+/*    min-width: 100%;
+    min-height: 100%;*/
+    /*background-color: #cccccc;*/
+    /*opacity: 0.6;*/
+    display: none;
+    border-radius: 10px 10px 10px 10px;
+}

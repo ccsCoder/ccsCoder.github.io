@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/tictactoe.js"></script>
+		<script type="text/javascript">
+			var context;
+			var height=501;
+			var width=501;
+			var offset = 90;
+			var crossToggle=true;
+			var checkedMatrix = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];		//-1=empty, 1=cross, 0-circle.
+			
+			//-----------Entry point.---------------//
+			window.onload = function() {
+				var myCanvas = document.getElementById("ticTacToe");
+				context = myCanvas.getContext("2d");
+				
+				
+				
+				//
+				drawPatternOnCanvas(myCanvas);
+				//context.stroke();
+				
+				myCanvas.addEventListener("click",handleCanvasClicks);
+				
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div style="text-align:center;text-align:-webkit-center;text-align:-moz-center">
+			<h2>Tic Tac Toe !</h2>
+			<canvas id="ticTacToe" height="501px" width="501px"></canvas>
+		</div>
+	</body>
+</html>
