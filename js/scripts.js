@@ -1,9 +1,6 @@
 $(document).ready(function() {
-	// $(".button-fill").hover(function () {
- //    	$(this).children(".button-inside").addClass('full');
- //    	console.log($(this).children(".button-inside").html());
-	// }, function() {
-	//   $(this).children(".button-inside").removeClass('full');
-	// });
+	$(".experiment_item").on("click",function(event) {
+		window.open($(this).attr("link_to_follow"),"_blank");
+	});
 });
 
