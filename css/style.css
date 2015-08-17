@@ -39,6 +39,9 @@ body {
     background-color: gainsboro;
     font-size:larger;
 }
+.noShow {
+    display:none;
+}
 
 
 .article_summary {
