@@ -65,24 +65,24 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li class="active">
+                            <!-- <li class="active topNavItem" >
                                 <a href="#">Home&nbsp;<span class='glyphicon glyphicon-home'></span></a>
-                            </li>
-                            <li>
+                            </li> -->
+                            <li class="active topNavItem" scrollTarget="aboutMe">
                                 <a href="#"> About Me&nbsp;<span class='glyphicon glyphicon-book'></span>  </a>
                             </li>
-                            <li>
+                            <li class="topNavItem" scrollTarget="Experiments">
                                 <a href="#">Experiments &nbsp;<span class='glyphicon glyphicon-search'></span></a>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav ">
-                            <li>
+                            <li class="topNavItem" scrollTarget="projects">
                                 <a href="#">Projects &nbsp;<span class='glyphicon glyphicon-envelope'></span></a>
                             </li>
                             
-                            <li>
+                           <!--  <li>
                                 <a href="#">Contact Me &nbsp;<span class='glyphicon glyphicon-user'></span></a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
 
@@ -98,7 +98,9 @@
                         
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                <h3>Me, Me and Me...<small> -- me too!</small></h3>    
+                                <h3>Me, Me and Me...<small> -- me too!</small></h3> 
+                                <a href="https://twitter.com/N_e_0_" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @N_e_0_</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>   
                             </div>
                         </div>
                         <div class="panel panel-default">
@@ -106,11 +108,12 @@
                                 <p class="text-justify">
                                     An Artist at heart who believes that Software could, and should be beautiful.
                                 </p>
-                                <p class="text-justify">
+                                <!-- <p class="text-justify">
                                    I work as a UI/UX guy at SAP Labs India Pvt Ltd. Currently obsessing over OPENUI5 and FIORI !
-                                </p>
+                                </p> -->
                                 <p class="text-justify">
                                    Love experimenting with Cutting Edge Technology, and when not doing that I can be found painting, (or atleast what I call it). Recently I purchased an ARDUINO, and I've started playing around with IOT.
+                                   Here are the places where I am "Socially" active.
                                 </p>
                                     <!-- <p>
                                         Find me at -
@@ -147,7 +150,7 @@
                 <div class="col-md-12 column">
                 </div>
             </div>
-            <div class="row clearfix">
+            <div class="row clearfix" id="Experiments">
                 <div class="col-md-12 column">
                     <div class="well well-lg">
                         <h3>Experiments...<small> --or likewise</small></h3>
@@ -213,7 +216,7 @@
                     <!-- <h1>Articles & Archives</h1> -->
                 </div>
             </div>
-            <div class="row clearfix" style="margin-top:20px">
+            <div class="row clearfix" style="margin-top:20px" id="projects">
                 <div class="col-md-12 column">
                     <div class="well well-lg">
                         <h3>Projects/Work...<small> --work</small></h3>
@@ -274,12 +277,12 @@
                                    <div class="panel panel-default article_summary">
                                         <div class="panel-heading text-center article_summary_heading">
                                             <!--<h2 class="text-center">-->
-                                            <span>Article1</span>   
+                                            <span>JPDA and Remote Debugging</span>   
                                             <!--</h2>-->
                                         </div>
                                         <div class="panel-body">
                                             <p>
-                                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                                                An article/tutorial accompanied with video on the SAP Community Network (SCN) which discusses Java Platform Debug Architecture.
                                         </p>
                                         <p class='text-right'>
                                              <button type="button" class="btn btn-default btn-xs modal_opener">More >></button>
@@ -293,12 +296,12 @@
                                     <div class="panel panel-default article_summary" >
                                         <div class="panel-heading text-center article_summary_heading">
                                             <!--<h2 class="text-center">-->
-                                            <span>Article1</span>
+                                            <span>HTML5 Notification API</span>
                                             <!--</h2>-->
                                         </div>
                                         <div class="panel-body">
                                             <p>
-                                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                                            Another article/tutorial that demonstrates how to use the HTML5 Notification API, accompanied with a JsBin Sample. 
                                         </p>
                                         <p class='text-right'>
                                             <button type="button" class="btn btn-default btn-xs modal_opener">More >></button>
@@ -311,12 +314,12 @@
                                     <div class="panel panel-defaul article_summary">
                                         <div class="panel-heading text-center article_summary_heading">
                                             <!--<h2 class="text-center">-->
-                                            <span>Article1</span>
+                                            <span>Google Maps API and More...</span>
                                             <!--</h2>-->
                                         </div>
                                         <div class="panel-body">
                                             <p>
-                                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                                            A rather forgotten blog I used to write on technology. However you'll still find content that's applicable to current applications.
                                         </p>
                                         <p class='text-right'>
                                             <button type="button" class="btn btn-default btn-xs modal_opener">More >></button>
@@ -338,7 +341,7 @@
                 <div class="footer" >
                     <div class="well-lg text-center">
                         <div id="socialContent" class="text-center"></div>
-                        Copyright (c) CCSCOD.ER, All Rights Reserved 2014.
+                        Copyright (c) CCSCOD.ER, All Rights Reserved 2015.
                     </div>
                 </div>
             </div>
@@ -375,17 +378,15 @@
             At Work, I got this requirement where I had to Tokenise a script, according to its Syntax (Grammar) but NOT compile it. Enter, Abstract Syntax Trees.   
         </p>
         <p>
-            That being said, the cumbersome middleware between Apps and corresponding frameworks, architechtures and technlogies built to support them are no longer necessary.
-            <strong>mBaaS (Mobile Backend as a Service)</strong> is the new kid on the block that let's your applications talk directly to the datastores on your Cloud Infrastructure. 
+            So I started reading up, (again) on AST's and found <strong>org.codehaus.grooovy.ast</strong> 
         </p>
         <p>
-            So, I built Apps to leverage this. This Application has a client that runs on a server(ideally) i.e the Machine Client and an Android App.
-            You Fire linux commands from the App, the client executes them on the machine it is installed in, and sends results back to the Mobile.
+            And the result was this parser that I wrote successfully. An afterthought, why don't all languages expose their internals like groovy ?
         </p>
         
             Github: 
             <div>
-                <a class="bg-info" href="https://github.com/ccsCoder/android_remote_commander" target="_blank">Android Client</a>
+                <a class="bg-info" href="https://github.com/ccsCoder/groovyASTParser" target="_blank">Groovy AST Parser</a>
             </div>
     </div>
     <div id="FireBase and mBaaS" class="noShow">
@@ -417,19 +418,63 @@
             This example serves to demonstrate how powerful websockets can be. A live chart that refreshes in real time as data changes in the backend.
         </p>
         <p>
-            That being said, the cumbersome middleware between Apps and corresponding frameworks, architechtures and technlogies built to support them are no longer necessary.
-            <strong>mBaaS (Mobile Backend as a Service)</strong> is the new kid on the block that let's your applications talk directly to the datastores on your Cloud Infrastructure. 
+            The thing to note here is that your app server should support the Websocket Protocol. I used <strong>GlassFish</strong>  and mocked the "Data Changing" stuff. 
         </p>
         <p>
-            So, I built Apps to leverage this. This Application has a client that runs on a server(ideally) i.e the Machine Client and an Android App.
-            You Fire linux commands from the App, the client executes them on the machine it is installed in, and sends results back to the Mobile.
+            I tend to use NetBeans more than eclipse but you can always import the source. Have a look.
         </p>
         <p>
             Github:</br> 
             <div>
-                <a class="bg-info" href="https://github.com/ccsCoder/android_remote_commander" target="_blank">Android Client</a>
+                <a class="bg-info" href="https://github.com/ccsCoder/websocket_charts" target="_blank">Websockets</a>
             </div>
         </p>
+    </div>
+    <div id="HTML5 Notification API" class="noShow">
+        <p>
+            In this short tutorial, I will describe how to use the HTML5 Notification API ( currently in Draft ), to be able to display "Notifications" from your web application.
+        </p>
+        <p>
+            This API is in a Draft State as of now, and in a constant state of revision. So things written here "may" not hold water in future.
+        </p>
+       
+        <p>
+            SCN Link:</br> 
+            <div>
+                <a class="bg-info" href="http://scn.sap.com/people/nishant_gupta/blog/2015/01/19/html5-notification-api-web-notifications" target="_blank">HTML5 Notifications</a>
+            </div>
+        </p>
+
+    </div>
+    <div id="JPDA and Remote Debugging" class="noShow">
+        <p>
+            JPDA is a multi-tiered debugging architecture that allows tools developers to easily create debugger applications which run portably across platforms, virtual machine (VM) implementations and JDK versions.
+        </p>
+        <p>
+            Video and Details here... :
+        </p>
+       
+        <p>
+            SCN Link:</br> 
+            <div>
+                <a class="bg-info" href="http://scn.sap.com/people/nishant_gupta/blog/2014/11/15/jpda-intro-and-remote-debugging-using-socket-transport" target="_blank">Remote Debugging</a>
+            </div>
+        </p>
+        
+    </div>
+    <div id="Google Maps API and More..." class="noShow">
+        <p>
+            The place is lonely, but it has 3 strong inhabitants. From an application which let's you view the Eiffel Tower in 3D to a technique for creating shaped Swing Windows, and a guide to dual boot linux and windows.
+
+        </p>
+            Sound useful ?
+        <p>
+            Blog Link:</br> 
+            <div>
+                <a class="bg-info" href="http://codebeast.blogspot.in/" target="_blank">Tech Blog</a>
+            </div>
+        </p>
+        
     </div>
         
     </body>
