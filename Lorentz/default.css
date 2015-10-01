@@ -1,0 +1,30 @@
+
+root { 
+    display: block;
+}
+
+body {
+    background:black;
+}
+
+.toolbar {
+    position:absolute;
+    background-color: silver;
+    top:10px;
+    left:10px;
+    width:500px;
+    height:40px;
+    opacity:0.6;
+    
+}
+
+input[type=button] {
+    background-color:white;
+}
+.particle {
+    height:3px;
+    width:3px;
+    position:absolute;
+    background-color:yellow;
+    border-radius: 1px;
+}

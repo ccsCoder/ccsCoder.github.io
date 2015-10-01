@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Directory listing.</title>
+		<link rel="stylesheet" href="main.css" />
+		<style type="text/css"></style>
+		<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="raphael-min.js"></script>
+		<script type="text/javascript" src="FSObject.js"></script>
+		<script type="text/javascript" src="DirectoryRenderer.js"></script>
+		
+		<script type="text/javascript">
+		var context=undefined;
+		$("document").ready(function() {
+
+			$(window).resize(function(event) {
+				context.clear();
+				startRender();
+			});
+			startRender();
+
+		});
+		function startRender() {
+
+			var top = $("#holder").position().top;
+			var left =$("#holder").position().left;
+			var vOffset = 20;
+			var hOffset =20;
+			var canvasWidth = $("#holder").width();
+			//console.log(canvasWidth);
+			var canvasHeight = $("#holder").height();
+
+			top+=vOffset;
+			left+= hOffset;
+
+			//Initialize Raphael here only Once.
+			 if(context==undefined && renderer==undefined) {
+			 	context = Raphael("holder",canvasWidth,canvasHeight);
+			 	
+			 }
+			 
+			var renderer = new Renderer(canvasWidth,canvasHeight,context);	
+			var fsobjects = [];
+			//Create some icons.
+			for(var i=0;i<35;i++) {
+				fsobjects.push(new FSObject("Item"+i,(i%2===0)));
+
+			}
+
+			renderer.layoutFilesAndFolders(left,top,fsobjects);
+		}
+		</script>
+	</head>
+	<body>
+		<div id="breadcrumb">
+		<span>Visited: </span>
+		</div>
+		<div id="holder">
+		</div>
+	</body>
+
+</html>

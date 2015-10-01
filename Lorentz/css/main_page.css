@@ -1,0 +1,59 @@
+/* 
+    Document   : main_page
+    Created on : Jul 2, 2012, 11:19:53 AM
+    Author     : NISHANTG
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+body{
+    background-color: black;
+    
+}
+
+#footer {
+    color:yellowgreen;
+    z-index: -100;
+    font-size: smaller;
+    float: right;
+    text-align: right;
+    position:absolute;
+    top:97%;
+    left:46%;
+}
+
+.dynamicText {
+    color:lime;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 24pt;
+    position:absolute;
+    left:-100px;
+    top:-100px;
+    text-shadow:2px 2px 2px darkgray; 
+}
+
+.dynamicText:hover {
+    color:lime;
+    text-shadow:3px 3px 3px #FF0000; 
+    cursor:pointer;
+}
+
+#messageBoard {
+    
+    text-align: center;
+    font-weight: bold;
+    font-size: 24pt;
+    width:90%;
+    height:70px;
+    top:5%;
+    position:absolute;
+    z-index:200;
+    display:none;
+    color:white;
+}

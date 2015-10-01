@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Raphael Testing...</title>
+		<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="raphael-min.js"></script>
+		
+		<script type="text/javascript">
+		$("document").ready(function() {
+
+			var canvasWidth= 500;
+			var canvasHeight=500;
+
+			//The Document start hook
+
+			var ctx = Raphael($("#animationPalette"),500,500);	//at 10,50 -> create canvas of size 320,200.
+
+			// var ctx = new Raphael(divDom,400,400);
+
+			var animationSpeed = 10000;
+			//create circle...
+
+			//var circle = paper.circle(50,40,10);		//create circle of radius 
+
+			var circle = ctx.circle(50,40,20);
+
+			//set the fill attribute.
+			circle.attr({
+				fill: '#f00',
+				stroke: 'none'
+			});
+
+			circle.animate({
+				cx: canvasWidth/2,
+				//cy: canvasWidth/2,
+					
+
+			}, 2000,'linear');
+
+			
+			
+
+
+		});
+		</script>
+	</head>
+	<body>
+		<h1>Here goes it...</h1>
+		<div id="animationPalette" style="border: 1px solid black">
+			
+		</div>
+	</body>
+
+</html>
