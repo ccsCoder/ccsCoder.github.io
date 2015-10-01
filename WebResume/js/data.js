@@ -13,10 +13,10 @@ var resumeData = {
       "university":"VIT University"
   },
   experience: {
-      totalExperience: '2.8 years',
-      previousCompanyName: 'Tata Consultancy Services Ltd.',
-      previousCompanyExp: '2.3',
-      currentCompanyName: 'Oracle India.'
+      totalExperience: 'Six Years',
+      previousCompanyName: 'Oracle India Ltd.',
+      previousCompanyExp: '2',
+      currentCompanyName: 'SAP Labs India.'
   }
 };
 
